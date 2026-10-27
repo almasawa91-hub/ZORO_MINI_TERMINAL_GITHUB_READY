@@ -3,8 +3,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="false"
-        android:label="ZORO MINI TERMINAL"
-        android:theme="@android:style/Theme.Material.NoActionBar"
+        android:label="ZORO MINI TERMINAL PRO"
+        android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">
         <activity
             android:name=".MainActivity"
