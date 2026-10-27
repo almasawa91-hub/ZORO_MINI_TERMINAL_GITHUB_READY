@@ -202,7 +202,8 @@ public class MainActivity extends Activity {
     }
     private File resolveLocal(String path) throws Exception {
         File f=new File(workDir,path).getCanonicalFile();
-        String base=workDir.getCanonicalPath() + File.separator;\n        if(!f.getCanonicalPath().equals(workDir.getCanonicalPath()) && !f.getCanonicalPath().startsWith(base)) throw new SecurityException("المسار خارج مساحة العمل");
+        String base=workDir.getCanonicalPath() + File.separator;
+        if(!f.getCanonicalPath().equals(workDir.getCanonicalPath()) && !f.getCanonicalPath().startsWith(base)) throw new SecurityException("المسار خارج مساحة العمل");
         return f;
     }
     private void listFiles(String path) throws Exception {
